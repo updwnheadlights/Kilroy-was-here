@@ -1,0 +1,101 @@
+@mixin mobile {
+    @media screen and (max-width: 480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media screen and (max-width: 1200px) {
+        @content;
+    }
+}
+
+body {
+    background-color: black;
+}
+
+
+a {
+    color: #009ADA;
+}
+
+
+
+.logo {
+    color: White;
+    font-weight: bold;
+    font-size: 10px;
+    position: center;
+
+    img {
+        max-height: 175px;
+        max-width: 175px;
+    }
+}
+
+.usersDisplay {
+    background-color: black;
+    align-items: center;
+    border-radius: 20px;
+    color: white;
+
+
+}
+
+
+.input {
+    background-color: black;
+    padding: 20px 60px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+
+
+    color: white;
+
+    input {
+        padding: 15px;
+        background-color: white;
+        border-radius: 8px;
+        border-color: white;
+        border: none;
+        width: 250px;
+        border-bottom: 1px solid;
+
+        &::placeholder {
+            font-size: 15px;
+            color: black;
+        }
+    }
+
+    button {
+        background-color: #009ADA;
+        color: white;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+    }
+
+}
+
+.footer {
+    margin-top: 1rem;
+    color: white;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+
+}
